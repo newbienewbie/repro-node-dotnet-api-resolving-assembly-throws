@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>NodeApiRepro</AssemblyName>
+    <RootNamespace>NodeApiRepro</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.JavaScript.NodeApi" Version="0.9.27" />
+    <PackageReference Include="Microsoft.JavaScript.NodeApi.Generator" Version="0.9.27" />
+
+    <!-- A plain dependency that is definitely NOT part of any shared framework. -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
